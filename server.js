@@ -4,7 +4,9 @@ const expressLayouts = require("express-ejs-layouts");
 const mongoose = require("mongoose");
 
 const indexRouter = require("./routes/index");
-if (process.env.NODE_ENV !== "prodcution") require("dotenv").config();
+if (process.env.NODE_ENV !== "prodcution") {
+  require("dotenv").config();
+}
 
 // require("dotenv").config({ path: "./.env" });
 app.set("view engine", "ejs");
