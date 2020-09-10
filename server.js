@@ -9,7 +9,7 @@ const indexRouter = require("./routes/index");
 // }
 // require("dotenv").config({ path: "./.env" });
 
-require("dotenv").config({ silent: process.env.NODE_ENV === "production" });
+// require("dotenv").config({ silent: process.env.NODE_ENV === "production" });
 app.set("view engine", "ejs");
 app.set("views", __dirname + "/views");
 app.set("layout", "layouts/layout");
