@@ -8,7 +8,7 @@ const authorRouter = require("./routes/authors");
 
 // if (process.env.NODE_ENV !== "prodcution") {
 //   require("dotenv").config();
-}
+// }
 // require("dotenv").config({ path: "./.env" });
 
 app.set("view engine", "ejs");
