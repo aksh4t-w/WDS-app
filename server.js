@@ -5,10 +5,11 @@ const mongoose = require("mongoose");
 
 const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/authors");
+const bookRouter = require("./routes/books");
 
-// if (process.env.NODE_ENV !== "prodcution") {
-//   require("dotenv").config();
-// }
+if (process.env.NODE_ENV !== "prodcution") {
+  require("dotenv").config();
+}
 // require("dotenv").config({ path: "./.env" });
 
 app.set("view engine", "ejs");
@@ -31,5 +32,6 @@ db.once("open", () => console.log("Connected to Database"));
 
 app.use("/", indexRouter);
 app.use("/authors", authorRouter);
+app.use("/books", bookRouter);
 
 app.listen(process.env.PORT || 3000);

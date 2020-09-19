@@ -1,1 +1,9 @@
-In body tag
+<h3>Recently Added</h3>
+<div>
+  <% books.forEach(book => { %>
+  <div class="container">
+    <img height="250" width="180" src="<%= book.coverImagePath %>" />
+    <div><%= book.title %></div>
+  </div>
+  <% }) %>
+</div>
