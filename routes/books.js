@@ -1,11 +1,11 @@
 const express = require("express");
 const router = express.Router();
 // const multer = require("multer");
-const path = require("path");
-const fs = require("fs");
+// const path = require("path");
+// const fs = require("fs");
 const Book = require("../models/books");
 const Author = require("../models/authors");
-const uploadPath = path.join("public", Book.coverImageBasePath);
+// const uploadPath = path.join("public", Book.coverImageBasePath);
 const imageMimeTypes = ["image/jpeg", "image/png", "image/gif"];
 
 // const upload = multer({

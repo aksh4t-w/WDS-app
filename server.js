@@ -7,9 +7,9 @@ const indexRouter = require("./routes/index");
 const authorRouter = require("./routes/authors");
 const bookRouter = require("./routes/books");
 
-// if (process.env.NODE_ENV !== "prodcution") {
-//   require("dotenv").config();
-// }
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 // require("dotenv").config({ path: "./.env" });
 
 app.set("view engine", "ejs");
