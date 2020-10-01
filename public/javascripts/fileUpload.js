@@ -1,8 +1,8 @@
 const rootStyles = window.getComputedStyle(document.documentElement);
 
 if (
-  rootStyles.getPrppertyValue("--book-cover-width-large") != null &&
-  rootStyles.getPrppertyValue("--book-cover-width-large") !== ""
+  rootStyles.getPropertyValue("--book-cover-width-large") != null &&
+  rootStyles.getPropertyValue("--book-cover-width-large") !== ""
 ) {
   ready();
 } else {
@@ -11,11 +11,11 @@ if (
 
 function ready() {
   const coverWidth = parseFloat(
-    rootStyles.getPrppertyValue("--book-cover-width-large")
+    rootStyles.getPropertyValue("--book-cover-width-large")
   );
 
   const aspectRatio = parseFloat(
-    rootStyles.getPrppertyValue("--book-cover-aspect-ratio")
+    rootStyles.getPropertyValue("--book-cover-aspect-ratio")
   );
 
   const coverHeight = coverWidth / aspectRatio;
